@@ -1,0 +1,152 @@
+:root{
+  --main-color: rgba(232,31,39);
+}
+
+html{
+   font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+ 
+  line-height: 1;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+#img-overlay{ 
+  position:absolute;
+  left:1em;
+  top:5em;
+  color: var(--main-color);
+  max-width:50rem;
+  text-align:left;
+  font-size:1.2rem;
+  max-width:50%;
+  z-index:2;
+  
+}
+
+#title {
+  font-size: 5em;
+  margin-bottom: 0;   
+  font-weight:bold;
+}
+
+
+#img-overlay blockquote {
+  font-style: italic; 
+  margin: 1em 0em;
+  text-align: left;
+  max-width:28em;
+  font-size:1.2em;
+}
+
+
+#img-div { 
+  background:black;
+  padding: 0px;
+  margin: 0;
+  color: rgba(255,255,255,0.9); 
+}
+
+#img-caption{
+  width:100%;
+  display:absolute;
+  bottom:0.5em;
+  right:0.5em;
+  text-align:right;
+}
+
+img {
+  max-width:100%; 
+  width:100%; 
+  min-height:40em;
+  max-height: 80vh;
+  display: block;
+  object-fit: cover;
+  object-position: 0% right; 
+  filter: grayscale(100%) opacity(90%) ;
+}
+
+
+#headline{
+  color:var(--main-color);
+  font-size:2rem;  
+  padding-right: 2em;
+}
+
+#headline_bottom{
+  color:var(--main-color);
+  font-size:1.8rem;  
+  padding-left: 2em;
+}
+
+a,strong {
+  color: var(--main-color);
+  font-weight:bold;
+}
+
+#timeline{
+  display:flex;
+  flex-direction:column; 
+  padding: 2em 1em;   
+  align-items:center; 
+}
+
+.timeline-item{
+  display:flex;
+  font-size:1.5rem; 
+  padding:1em;  
+  min-height:5em;  
+  align-items:center;
+  justify-content:center;
+  width:22em;
+  max-width:90%;
+  margin: 0.5em 0em;
+}
+
+.timeline-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.timeline-year{
+  color: var(--main-color);
+  font-weight:bold;
+  font-size:2em; 
+}
+
+.separator{
+  width:0.2em;
+  height:100%;
+  margin:0em 1em;
+   min-height:5em; 
+  background: var(--main-color);
+}
+
+.timeline-content{  
+  align-self:center;
+  font-style:italic;
+}
+
+.timeline-end{
+  font-size:2em;
+  text-align:center;
+}
+
+h3{
+  font-size:1.2rem;
+  padding:1em;
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 12px;   
+  }  
+}
+
+
+
+
+
